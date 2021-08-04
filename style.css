@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#app {
+  width: 400px;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h3 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+img {
+  width: 8rem;
+  height: 5rem;
+  border-radius: 10%;
+  border: 5px #333 solid;
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background: #333;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  padding: 1rem 1.5rem;
+}
+
+.Americas {
+  border-color: #c42d2e;
+  background-color: #c42d2e;
+}
+
+.Africa {
+  border-color: #333333;
+  background-color: #333333;
+}
+
+.Asia {
+  border-color: #f7d101;
+  color: #333;
+  background-color: #f7d101;
+}
+
+.Europe {
+  border-color: #1c90ca;
+  background-color: #1c90ca;
+}
+
+.Oceania {
+  border-color: #00943d;
+  background-color: #00943d;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
