@@ -10,7 +10,7 @@
   <body>
     <div id="app">
       <img :class="region" v-bind:src="flag" :alt="countryName" />
-      <h1>Country: {{ countryName }}</h1>
+      <h1>{{ countryName }}</h1>
       <h3>Capital: {{ capital }}</h3>
       <button v-on:click="getCountry()" :class="region">Get Random Country</button>
     </div>
