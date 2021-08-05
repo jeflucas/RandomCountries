@@ -7,12 +7,25 @@
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  width: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 #app {
-  width: 400px;
-  height: 100vh;
-  margin: auto;
+  margin-top: 70px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -45,29 +58,29 @@ button {
 }
 
 .Americas {
-  border-color: #c42d2e;
-  background-color: #c42d2e;
+  border-color: #F40404;
+  background-color: #F40404;
 }
 
 .Africa {
-  border-color: #333333;
-  background-color: #333333;
+  border-color: #2C302E;
+  background-color: #2C302E;
 }
 
 .Asia {
-  border-color: #f7d101;
+  border-color: #F4B651;
   color: #333;
-  background-color: #f7d101;
+  background-color: #F4B651;
 }
 
 .Europe {
-  border-color: #1c90ca;
-  background-color: #1c90ca;
+  border-color: #496897;
+  background-color: #496897;
 }
 
 .Oceania {
-  border-color: #00943d;
-  background-color: #00943d;
+  border-color: #0FA551;
+  background-color: #0FA551;
 }
 
 button:focus {
@@ -76,4 +89,88 @@ button:focus {
 
 button:hover {
   transform: scale(0.98);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+
+  transition: 0.5s ease; 
+}
+
+.card-image {
+  grid-area: image;
+}
+
+.card-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: black;
+  font-size: 13px;
+}
+
+.card-text p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-row: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.card-stats .type {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-stats .value {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-stats .border {
+  border-left:1px solid black;
+  border-right: 1px solid black;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }

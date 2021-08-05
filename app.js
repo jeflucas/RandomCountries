@@ -5,6 +5,9 @@ const app = Vue.createApp({
       capital: "Brasília",
       region: "Americas",
       flag: "https://restcountries.eu/data/bra.svg",
+      code: "BRA",
+      population: 206135893,
+      area: 8515767.0
     };
   },
   methods: {
@@ -22,6 +25,9 @@ const app = Vue.createApp({
         (this.capital = data[index].capital),
         (this.region = data[index].region),
         (this.flag = data[index].flag);
+        (this.code = data[index].alpha3Code);
+        (this.population = data[index].population);
+        (this.area = data[index].area);
     },
   },
 });
