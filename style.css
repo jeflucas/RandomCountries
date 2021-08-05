@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url(./img/bg.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   overflow: hidden;
 }
