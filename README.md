@@ -1,8 +1,6 @@
 # RandomCountries
 
 
-
-
 [![CodeFactor](https://www.codefactor.io/repository/github/jeflucas/randomcountries/badge)](https://www.codefactor.io/repository/github/jeflucas/randomcountries)
 
 
